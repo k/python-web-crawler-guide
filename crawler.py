@@ -29,7 +29,7 @@ def crawl(url, prevLevel=0):
                 print child["url"]
                 root["children"].append(child)
 
-    #root["content"] = soup.renderContents()
+    root["content"] = soup.renderContents()
     return root
 
 crawl(startingURL)
