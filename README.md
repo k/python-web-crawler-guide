@@ -23,6 +23,8 @@ imoprt urllib2    # Library for url fetching
 import lxml.html  # Library for html parsing
 ```
 
+If your python doesn't have lxml, download it via pip on the command line: `pip install lxml`
+
 Now onto the crawler logic.  As I mentioned before, web crawling is a recursive process, but to have recursion we need to first define a function
 
 ```
@@ -87,4 +89,4 @@ def crawl(url, depth=3):
 ```
 
 
-## What's Next?
+## What's Next
